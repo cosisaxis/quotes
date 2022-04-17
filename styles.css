@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+}
+
+body{
+    background-image: url("mist2.jpg");
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.container{
+    width: 500px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 30px 30px 25px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+}
+
+.container h1{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .container .page{
+    margin: 35px 0;
+  }
+  .container .quotes{
+    display: flex;
+    justify-content: center;
+  }
+  .quotes i{
+    font-size: 15px;
+  }
+  .quotes i:first-child{
+    margin: 3px 10px 0 0;
+  }
+  .quotes i:last-child{
+    display: flex;
+    margin: 0 0 3px 10px;
+    align-items: flex-end;
+  }
+  .quotes .quote{
+    font-size: 22px;
+    text-align: center;
+    word-break: break-all;
+  }
+  .container .writer{
+    display: flex;
+    font-size: 18px;
+    margin-top: 20px;
+    font-style: italic;
+    justify-content: flex-end;
+  }
+  .writer span:first-child{
+    margin: -7px 5px 0 0;
+  }
+  .container .btn{
+    border-top: 1px solid #ccc;
+  }
+  .btn .addons{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .addons ul{
+    display: flex;
+  }
+  .addons ul li{
+    margin: 0 5px;
+    height: 47px;
+    width: 47px;
+    display: flex;
+    cursor: pointer;
+    color: black;
+    list-style: none;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    transition: all 0.3s ease;
+  }
+  .addons ul li:first-child{
+    margin-left: 0;
+  }
+  ul li:is(:hover, .active){
+    color: #fff;
+    background: black;
+  }
+  ul .speech.active{
+    pointer-events: none;
+  }
+  .btn button{
+    border: none;
+    color: #fff;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 13px 22px;
+    border-radius: 30px;
+    background: black;
+  }
+  .btn button.loading{
+    opacity: 0.7;
+    pointer-events: none;
+  }
+
+  @media only screen and (max-width: 500px) {
+      .container{
+          width: 350px;
+          height: 300px;
+      }
+      
+  }
+  
