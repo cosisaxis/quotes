@@ -37,7 +37,7 @@ body{
     justify-content: center;
   }
   .quotes i{
-    font-size: 15px;
+    font-size: 10px;
   }
   .quotes i:first-child{
     margin: 3px 10px 0 0;
@@ -48,13 +48,13 @@ body{
     align-items: flex-end;
   }
   .quotes .quote{
-    font-size: 22px;
+    font-size: 15px;
     text-align: center;
     word-break: break-all;
   }
   .container .writer{
     display: flex;
-    font-size: 18px;
+    font-size: 15px;
     margin-top: 20px;
     font-style: italic;
     justify-content: flex-end;
@@ -116,7 +116,31 @@ body{
   @media only screen and (max-width: 500px) {
       .container{
           width: 350px;
-          height: 300px;
+          height: 200px;
+          padding: 1px;
+      }
+      .container h1{
+        font-size: 20px;
+        padding: 0;
+        margin-bottom: 0;
+      }
+      .container .page{
+        margin: 0 10px;
+      }
+      .btn .addons{
+        margin-top: 5px;
+      }
+
+      .btn button{
+        padding: 8px 15px;
+        margin-right: 5px;
+        font-size: 13px;
+      }
+
+      .addons ul li{
+        height: 30px;
+        width: 30px;
+        margin: 10px;
       }
       
   }
