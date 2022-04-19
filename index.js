@@ -41,7 +41,7 @@ copied.addEventListener("click", () => {
 });
 
 tweets.addEventListener("click", () => {
-  let url = `https://twitter.com/intent/tweet?url=${quotes.innerText}`;
+  let url = `https://twitter.com/intent/tweet?url=${quotes.innerText}` + '\n' +"  https://quotes-azure.vercel.app/";
   window.open(url);
 });
 
