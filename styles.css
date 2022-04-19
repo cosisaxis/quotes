@@ -8,12 +8,13 @@
 }
 
 body{
-    background-image: url("mist2.jpg");
-    background-position: center;
+    /* background-image: url("mist2.jpg");
+    background-position: center; */
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 100px;
+    background-color: black;
 }
 
 .container{
@@ -115,7 +116,7 @@ body{
 
   @media only screen and (max-width: 500px) {
       .container{
-          width: 350px;
+          width: 380px;
           height: 200px;
           padding: 1px;
           margin-top: 150px;
@@ -124,6 +125,7 @@ body{
         font-size: 20px;
         padding: 0;
         margin-bottom: 0;
+
       }
       .container .page{
         margin: 0 10px;
