@@ -17,4 +17,13 @@ function getQuote(){
     })
 }
 
+copied.addEventListener("click", ()=>{
+    navigator.clipboard.writeText(quotes.innerText);
+})
+
+tweets.addEventListener("click", ()=>{
+    let url = `https://twitter.com/intent/tweet?url=${quotes.innerText}`;
+    window.open(url);
+} )
+
 buttons.addEventListener("click", getQuote);
