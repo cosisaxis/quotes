@@ -6,6 +6,7 @@ copied = document.querySelector(".copy");
 tweets = document.querySelector(".tweet");
 synth = speechSynthesis;
 
+// get random quote from api 
 function getQuote() {
     buttons.classList.add("loading");
     buttons.innerText = "Loading New Quote...";
@@ -36,10 +37,23 @@ function getQuote() {
   //   });
 }
 
+// speech button
+talk.addEventListener("click", ()=>{
+  if(!buttons.classList.contains("loading")){
+      let utterance = new SpeechSynthesisUtterance(`${quotes.innerText} by ${names.innerText}`);
+      synth.speak(utterance);
+      setInterval(()=>{
+          !synth.speaking ? talk.classList.remove("active") : talk.classList.add("active");
+      }, 8);
+  }
+});
+
+// copy the quotes
 copied.addEventListener("click", () => {
   navigator.clipboard.writeText(quotes.innerText);
 });
 
+// tweets quotes
 tweets.addEventListener("click", () => {
   let url = `https://twitter.com/intent/tweet?url=${quotes.innerText}` + '\n' +"  https://quotes-azure.vercel.app/";
   window.open(url);
