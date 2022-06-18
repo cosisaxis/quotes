@@ -6,11 +6,19 @@
     box-sizing: border-box;
     font-family: 'Anton', sans-serif;
 }
+:root{
+  --primary-color: #fff;
+  --secondary-color: #000;
+}
+.dark{
+  --primary-color: #000000;
+  --secondary-color: #fff;
+}
 
 body{
     /* background-image: url("mist2.jpg");
     background-position: center; */
-    
+    background: var(--primary-color);
 }
 .holder{
     display: flex;
@@ -21,26 +29,26 @@ body{
 
 .container{
     width: 500px;
-    background-color: white;
+    background: var(--secondary-color);
     border-radius: 25px;
     padding: 30px 30px 25px;
     box-shadow: 0 12px 35px rgba(0,0,0,0.1);
 }
 
 .navbar{
-  display: flex;
-  top: 10px;
+  text-align: right;
+  
 }
 
 #icon{
   width: 30px;
-  color: red;
 }
 
 .container h1{
     font-size: 30px;
     font-weight: 700;
     text-align: center;
+    color: var(--primary-color);
   }
   .container .page{
     margin: 35px 0;
@@ -51,6 +59,7 @@ body{
   }
   .quotes i{
     font-size: 10px;
+    color: var(--primary-color);
   }
   .quotes i:first-child{
     margin: 3px 10px 0 0;
@@ -64,6 +73,7 @@ body{
     font-size: 15px;
     text-align: center;
     word-break: break-all;
+    color: var(--primary-color);
   }
   .container .writer{
     display: flex;
@@ -93,12 +103,12 @@ body{
     width: 47px;
     display: flex;
     cursor: pointer;
-    color: black;
+    color: var(--primary-color);
     list-style: none;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    border: 2px solid black;
+    border: 2px solid var(--primary-color);
     transition: all 0.3s ease;
   }
   .addons ul li:first-child{
@@ -113,13 +123,13 @@ body{
   }
   .btn button{
     border: none;
-    color: #fff;
+    color: var(--secondary-color);
     outline: none;
     font-size: 16px;
     cursor: pointer;
     padding: 13px 22px;
     border-radius: 30px;
-    background: black;
+    background: var(--primary-color);
   }
   .btn button.loading{
     opacity: 0.7;

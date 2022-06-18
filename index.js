@@ -5,6 +5,16 @@ talk = document.querySelector(".automated-speech");
 copied = document.querySelector(".copy");
 tweets = document.querySelector(".tweet");
 synth = speechSynthesis;
+icons = document.getElementById("icon");
+
+icons.onclick = function(){
+  document.body.classList.toggle("dark");
+  if(document.body.classList.contains("dark")){
+    icons.src = "sun.png"
+  } else {
+    icons.src = "moon.png"
+  }
+}
 
 // get random quote from api 
 function getQuote() {
