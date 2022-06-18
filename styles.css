@@ -37,7 +37,9 @@ body{
 
 .navbar{
   text-align: right;
-  
+  margin-top: 20px;
+  padding: 10px;
+  cursor: pointer;
 }
 
 #icon{
@@ -81,6 +83,7 @@ body{
     margin-top: 20px;
     font-style: italic;
     justify-content: flex-end;
+    color: var(--primary-color);
   }
   .writer span:first-child{
     margin: -7px 5px 0 0;
@@ -137,6 +140,18 @@ body{
   }
    ul.automated-speech.active{
      pointer-events: none;
+   }
+
+   .footer{
+    text-align: center;
+    font-size: 10px;
+    margin-top: 30px;
+    text-decoration: none;
+    color: var(--secondary-color);
+   }
+   .footer-name{
+    text-decoration: none;
+    color: red;
    }
 
   @media only screen and (max-width: 500px) {
